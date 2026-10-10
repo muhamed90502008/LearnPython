@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithmique et Programmation Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Algorithmique et Programmation Python</h1>
+        <h2>3ème Sciences Informatiques</h2>
+        <hr>
+        <p>Bienvenue sur ce site consacré aux notions essentielles d'algorithmique et de programmation Python.</p>
+    </header>
+
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="cv.html">Mon CV</a>
+    </nav>
+
+    <h2>📚 Sommaire</h2>
+    <ul>
+        <li><a href="#variables">Les variables</a></li>
+        <li><a href="#entrees">Entrées et sorties</a></li>
+        <li><a href="#conditions">Les conditions</a></li>
+        <li><a href="#while">La boucle While</a></li>
+        <li><a href="#for">La boucle For</a></li>
+        <li><a href="#listes">Les listes</a></li>
+        <li><a href="#fonctions">Les fonctions</a></li>
+        <li><a href="#operateurs">Les opérateurs</a></li>
+        <li><a href="#comparaison">Algorithmique et Python</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="variables">1. Les variables</h2>
+    <p>Une variable est une zone mémoire utilisée pour stocker une valeur. En Python, il n'est pas nécessaire de déclarer le type de la variable.</p>
+    <h3>Exemple en Python</h3>
+    <pre>age = 17
+nom = "Ahmed"
+moyenne = 15.5</pre>
+    <h3>Exemple en Algorithmique</h3>
+    <pre>Algorithme Exemple
+Variables
+    age : entier
+    nom : chaîne
+    moyenne : réel
+Début
+    age ← 17
+    nom ← "Ahmed"
+    moyenne ← 15.5
+Fin</pre>
+
+    <h3>Types de données</h3>
+    <table>
+        <tr><th>Type</th><th>Signification</th><th>Exemple Python</th></tr>
+        <tr><td>int</td><td>Nombre entier</td><td>age = 17</td></tr>
+        <tr><td>float</td><td>Nombre réel</td><td>moyenne = 15.5</td></tr>
+        <tr><td>str</td><td>Chaîne de caractères</td><td>nom = "Ali"</td></tr>
+        <tr><td>bool</td><td>Booléen</td><td>admis = True</td></tr>
+    </table>
+
+    <hr>
+    <h2 id="entrees">2. Entrées et sorties</h2>
+    <h3>Afficher une information</h3>
+    <p>En Python, on utilise la fonction <b>print()</b>.</p>
+    <pre>print("Bonjour")
+print(age)</pre>
+    <h3>Lire une information</h3>
+    <p>Pour demander une information à l'utilisateur, on utilise <b>input()</b>.</p>
+    <pre>nom = input("Donner votre nom : ")
+age = int(input("Donner votre âge : "))</pre>
+    <h3>En Algorithmique</h3>
+    <pre>Ecrire("Donner votre âge")
+Lire(age)</pre>
+
+    <hr>
+    <h2 id="conditions">3. Les conditions</h2>
+    <p>Les conditions permettent d'exécuter des instructions selon qu'une condition est vraie ou fausse.</p>
+    <h3>Structure en Python</h3>
+    <pre>if condition:
+    instruction
+else:
+    instruction</pre>
+    <h3>Exemple</h3>
+    <pre>age = int(input("Donner votre âge : "))
+
+if age >= 18:
+    print("Majeur")
+else:
+    print("Mineur")</pre>
+    <h3>En Algorithmique</h3>
+    <pre>Si age >= 18 Alors
+    Ecrire("Majeur")
+Sinon
+    Ecrire("Mineur")
+FinSi</pre>
+    <h3>Les opérateurs de comparaison</h3>
+    <table>
+        <tr><th>Opérateur</th><th>Signification</th></tr>
+        <tr><td>==</td><td>Égal à</td></tr>
+        <tr><td>!=</td><td>Différent de</td></tr>
+        <tr><td>&gt;</td><td>Supérieur à</td></tr>
+        <tr><td>&lt;</td><td>Inférieur à</td></tr>
+        <tr><td>&gt;=</td><td>Supérieur ou égal à</td></tr>
+        <tr><td>&lt;=</td><td>Inférieur ou égal à</td></tr>
+    </table>
+
+    <hr>
+    <h2 id="while">4. La boucle While</h2>
+    <p>La boucle <b>while</b> permet de répéter des instructions tant qu'une condition est vraie.</p>
+    <h3>Python</h3>
+    <pre>i = 1
+
+while i <= 5:
+    print(i)
+    i = i + 1</pre>
+    <h3>Algorithmique</h3>
+    <pre>i ← 1
+
+Tant que i <= 5 Faire
+    Ecrire(i)
+    i ← i + 1
+FinTantQue</pre>
+    <h3>Résultat</h3>
+    <p>1 - 2 - 3 - 4 - 5</p>
+
+    <hr>
+    <h2 id="for">5. La boucle For</h2>
+    <p>La boucle <b>for</b> permet de répéter une instruction un nombre déterminé de fois.</p>
+    <h3>Python</h3>
+    <pre>for i in range(1, 6):
+    print(i)</pre>
+    <h3>Algorithmique</h3>
+    <pre>Pour i de 1 à 5 Faire
+    Ecrire(i)
+FinPour</pre>
+    <h3>Comparaison While / For</h3>
+    <table>
+        <tr><th>While</th><th>For</th></tr>
+        <tr><td>Répétition basée sur une condition</td><td>Répétition généralement basée sur un nombre de tours</td></tr>
+        <tr><td>La condition est testée à chaque tour</td><td>Utilisé souvent avec range()</td></tr>
+        <tr><td>while i &lt; 10:</td><td>for i in range(10):</td></tr>
+    </table>
+
+    <hr>
+    <h2 id="listes">6. Les listes</h2>
+    <p>Une liste permet de stocker plusieurs valeurs dans une seule variable.</p>
+    <h3>Python</h3>
+    <pre>notes = [12, 15, 18, 10, 14]
+
+print(notes)
+print(notes[0])</pre>
+    <h3>Quelques opérations</h3>
+    <table>
+        <tr><th>Instruction</th><th>Rôle</th></tr>
+        <tr><td>append()</td><td>Ajouter un élément</td></tr>
+        <tr><td>remove()</td><td>Supprimer un élément</td></tr>
+        <tr><td>len()</td><td>Donner le nombre d'éléments</td></tr>
+        <tr><td>sort()</td><td>Trier la liste</td></tr>
+    </table>
+
+    <hr>
+    <h2 id="fonctions">7. Les fonctions</h2>
+    <p>Une fonction est un bloc d'instructions qui permet de réaliser une tâche précise et qui peut être réutilisé.</p>
+    <h3>Python</h3>
+    <pre>def somme(a, b):
+    return a + b
+
+resultat = somme(5, 3)
+print(resultat)</pre>
+    <h3>Algorithmique</h3>
+    <pre>Fonction somme(a, b : entier) : entier
+Début
+    Retourner a + b
+Fin</pre>
+
+    <hr>
+    <h2 id="operateurs">8. Les opérateurs</h2>
+    <table>
+        <tr><th>Opérateur</th><th>Exemple</th><th>Résultat</th></tr>
+        <tr><td>+</td><td>5 + 3</td><td>8</td></tr>
+        <tr><td>-</td><td>5 - 3</td><td>2</td></tr>
+        <tr><td>*</td><td>5 * 3</td><td>15</td></tr>
+        <tr><td>/</td><td>5 / 2</td><td>2.5</td></tr>
+        <tr><td>//</td><td>5 // 2</td><td>2</td></tr>
+        <tr><td>%</td><td>5 % 2</td><td>1</td></tr>
+        <tr><td>**</td><td>2 ** 3</td><td>8</td></tr>
+    </table>
+
+    <hr>
+    <h2 id="comparaison">9. Algorithmique et Python</h2>
+    <table>
+        <tr><th>Algorithmique</th><th>Python</th></tr>
+        <tr><td>Ecrire()</td><td>print()</td></tr>
+        <tr><td>Lire()</td><td>input()</td></tr>
+        <tr><td>Si ... Alors</td><td>if</td></tr>
+        <tr><td>Sinon</td><td>else</td></tr>
+        <tr><td>Tant que</td><td>while</td></tr>
+        <tr><td>Pour</td><td>for</td></tr>
+        <tr><td>←</td><td>=</td></tr>
+        <tr><td>Mod</td><td>%</td></tr>
+    </table>
+
+    <hr>
+    <h2>10. Résumé</h2>
+    <ol>
+        <li>Une variable permet de stocker une valeur.</li>
+        <li>input() permet de lire une donnée.</li>
+        <li>print() permet d'afficher une information.</li>
+        <li>if / else permettent de faire des choix.</li>
+        <li>while permet de répéter selon une condition.</li>
+        <li>for permet de répéter plusieurs fois.</li>
+        <li>Les listes permettent de stocker plusieurs valeurs.</li>
+        <li>Les fonctions permettent de réutiliser du code.</li>
+    </ol>
+
+    <footer>
+        <p><b>Algorithmique &amp; Programmation Python</b></p>
+        <p>Niveau : 3ème Sciences Informatiques</p>
+        <p>Med Njeh - Site éducatif</p>
+    </footer>
+</body>
+</html>

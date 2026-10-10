@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire</h1>
+        <p>Merci de remplir les informations suivantes.</p>
+    </header>
+
+
+
+    <h2>Mes informations</h2>
+    <form action="accueil.html" method="get">
+        <p>
+            <label for="nom">Nom et prénom :</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+        </p>
+
+        <p>
+            <label for="age">Âge :</label><br>
+            <input type="number" id="age" name="age" min="1" max="100">
+        </p>
+
+        <p>
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com">
+        </p>
+
+        <p>
+            <label for="classe">Classe :</label><br>
+            <select id="classe" name="classe">
+                <option value="">Choisir une classe</option>
+                <option>3ème Sciences Informatiques</option>
+                <option>3ème Sciences Expérimentales</option>
+                <option>Autre</option>
+            </select>
+        </p>
+
+        <p>Genre :</p>
+        <p>
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="femme">Femme</label>
+            <input type="radio" id="autre" name="genre" value="autre">
+            <label for="autre">Autre</label>
+        </p>
+
+        <p>
+            <label for="sujet">Sujet préféré :</label><br>
+            <select id="sujet" name="sujet">
+                <option>Python</option>
+                <option>Algorithmique</option>
+                <option>HTML et CSS</option>
+                <option>Autre</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="message">Remarques :</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Écrire ici..."></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="accord" name="accord">
+            <label for="accord">J'accepte d'envoyer mes informations.</label>
+        </p>
+
+        <div class="boutons">
+            <button type="submit">Envoyer</button>
+            <button type="reset" class="annuler">Annuler</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>Med Njeh - Site éducatif</p>
+    </footer>
+</body>
+</html>
